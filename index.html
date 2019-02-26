@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 
@@ -32,7 +32,7 @@
               <div class="calendar-search-parent d-flex align-items-md-center justify-content-lg-end">
 		        	<i class="fa fa-calendar text-white d-none d-md-flex" aria-hidden="true"><span class="calendar">calendars </span></i>
 
-					<form class="example group" action="action_page.php" method="get"> 
+					<form class="example clearfix" action="action_page.php" method="get"> 
 					  <input class="bg-light" type="text" placeholder="Search.." name="search">
 					  <button type="submit"><i class="fa fa-search"></i></button>
 					</form>
@@ -67,7 +67,7 @@
     	<div class="container-fluid">  
 	            <h1 class="latest-n-h">Latest News</h1>
 	       <div class="row">
-	       	 <div class="col-md-6 col-lg-3">      
+	       	 <div class="col-md-6 col-lg-3">       
 	       	    <img class='d-none d-md-block' src="assets/images/img-1.png" alt=''> 	 	
 				<h2 class="h-2">FATF Targeted Financial Sanctions Expert's meeting</h2>
 				<p class="date">23 June 2014</p>
@@ -161,14 +161,22 @@
     		<div class="row">
     			<div class="col-md-3 pb-3">
     				<h1>Reports</h1>
-    				<ul class="footer-lists">
-    					<li><h2><a href="">Typologies Reports</a></h2></li>
-    					<li><h2><a href="">Guidance and Best Practice Reports</a></h2></li>	
-    					<li><h2><a href="">Mutual Evaluation Reports</a></h2></li>	
-    					<li><h2><a href="">Risk-Based Approach Reports</a></h2></li>	
-    					<li><h2><a href="">FATF Annual Report: 2012-2013</a></h2></li>		
+    				<ul class="footer-lists f-lists1">
+    					<li class="clearfix">
+    						<h2><i class="fas fa-arrow-right"></i><a href="">Typologies Reports</a></h2>
+    					</li>
+    					<li class="clearfix">
+    						<h2><i class="fas fa-arrow-right"></i><a href="">Guidance and Best Practice Reports</a></h2>
+    					</li>	
+    					<li class="clearfix">
+    						<h2><i class="fas fa-arrow-right"></i><a href="">Mutual Evaluation Reports</a></h2>
+    					</li>	
+    					<li class="clearfix">
+    						<h2><i class="fas fa-arrow-right"></i><a href="">Risk-Based Approach Reports</a></h2>
+    					</li>	
+    					<li class="clearfix"><h2><i class="fas fa-arrow-right"></i><a href="">FATF Annual Report: 2012-2013</a></h2></li>		
     				</ul>		
-    			</div>
+    			</div> <!-- col end -->
     			<div class="col-md-3 pb-3">
     				<h1>About</h1>
     				<ul class="footer-lists">
@@ -179,7 +187,7 @@
     					<li><h2><a href="">FATF Secretariat</a></h2></li>
     					<li><h2><a href="">History of the FATF</a></h2></li>   							
     				</ul>		
-    			</div>
+    			</div><!-- col end -->
     			<div class="col-md-3 pb-3">
     				<h1>Frequently asked questions</h1>
     				<ul class="footer-lists">
@@ -188,7 +196,7 @@
     					<li><h2><a href="">Money Laundering</a></h2></li>	
     					<li><h2><a href="">Fraud Warning</a></h2></li>			
     				</ul>		    				
-    			</div>
+    			</div><!-- col end -->
     			<div class="col-md-3 pb-3">
     				<h1>More</h1>
     				<ul class="footer-lists">
@@ -196,7 +204,7 @@
     					<li><h2><a href="">Calendar of events</a></h2></li>	
     					<li><h2><a href="">Job Opportunities</a></h2></li>		
     				</ul>		
-    			</div>
+    			</div><!-- col end -->
     			<div class="col">
     				<h1></h1>
     				<ul class="footer-lists">
@@ -204,7 +212,36 @@
     					<li><h2><a href=""></a></h2></li>	
     					<li><h2><a href=""></a></h2></li>	  							
     				</ul>		
-    			</div>
+    			</div><!-- col end -->
+    		</div> <!-- row end -->
+    	</div> <!-- container end -->
+
+       	<div class="container-fluid justify-content-end mb">
+       	<div class="row">
+    	<div class="contact mx-auto mr-md-3"> 
+    	    <span class="follow d-block mb-2 mb-md-0 d-md-inline-block">Follow us:</span>   		
+    		<span class="fab fa-facebook-f"></span>
+    		<span class="fab fa-twitter"><a href=""></a></span>
+    		<a href=""><span class="e-mail">E-mail Alerts</span></a> 
+    		</div>		
+    	</div>
+    	</div>
+
+    	<div class="container-fluid last-part mt-4 mt-md-5">
+    		<div class="row">
+    			<div class="col-12 text-center col-md-6 order-md-2  text-md-right col-lg-4 px-lg-0 text-lg-center ">	
+    			<ul class="last-info  ">
+    				<li><a href="">terms & conditions</a></li>
+    				<li><a href="">site map</a></li>
+    				<li><a href="">contact us</a></li>
+    			</ul>
+    		</div>
+    			<div class="col-12 text-center col-md-6 order-md-1 pr-md-0 text-md-left col-lg-4">
+                  <div class="copyright">
+    			  © fatf-ga 2014. All rights reserved
+    		  </div>
+    		</div>
+    		  <!-- </div> -->
     		</div>
     	</div>
     	

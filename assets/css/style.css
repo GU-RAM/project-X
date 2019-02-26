@@ -82,13 +82,6 @@ form.example button:hover {
   background: #0b7dda;
 }
 
-/* Clear floats */
-.group::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .vl {
   border-left: 2px solid white;
   height: 45px;
@@ -199,7 +192,8 @@ form.example button:hover {
 }
 
 .topics,
-.key-pub-list {
+.key-pub-list,
+.last-info {
 	list-style-type: none;
 	padding-left: 0;
 	/*float: left;*/
@@ -236,9 +230,97 @@ form.example button:hover {
 	font-size: 18px;
 }
 
+.f-lists1 a {
+	float: right;
+	width: 95%;
+	padding-left: 10px;
+}
+
+.fa-arrow-right {
+	width: 5%;
+}
+
+.footer-lists .fas{
+	font-weight: 600;
+	color: red;
+}
+
+
 .footer-lists {
 	padding-left: 0
 }
+
+.contact span {
+	margin-left: 10px;
+}
+
+.follow {
+	color: #000;
+	font-weight: bold;
+}
+
+footer span.fab {
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+	width: 56px;
+	height: 56px;
+	padding-left: 25px;
+	padding-top: 10px;
+	background-color: rgb(79, 158, 178);
+}
+
+
+footer span.fa-twitter {
+	font-size: 35px;
+	padding-left: 0;
+	vertical-align: top;
+}
+
+.contact a {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 160px;
+	height: 56px;
+	font-size: 20px;
+	color: #fff;
+	background-color: rgb(79, 158, 178);
+}
+
+.e-mail {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.last-part {
+	font-size: 14px;
+	padding: 10px 0;
+	background-color: rgb(79, 158, 178);
+}
+
+.last-info {
+	margin-bottom: 10px;
+}
+
+.last-info li {
+	display: inline-block;
+	border-right: 2px solid #fff;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.last-info li:last-child {
+	border-right: none;
+}
+
+.last-info,
+.last-info a,
+.copyright {
+	color: #000;
+}
+
 
 /*------- End of footer --------*/
 
@@ -318,7 +400,35 @@ form.example button:hover {
 		padding-top: 45px;
 	}
 
-}
+	.f-lists1 a {
+		width: 90%;
+		padding-left: 5px;
+	}
+
+	.fa-arrow-right {
+	    width: 10%;
+   }
+
+   .contact span {
+	    margin-left: 35px;
+   }
+
+   footer span.fab {
+	   font-size: 53px;
+	   width: 70px;
+	   height: 70px;
+   }
+   
+    footer span.fa-twitter {
+    	font-size: 45px;
+    	padding-top: 15px;
+    } 
+
+    .contact a {
+    	width: 200px;
+    	height: 70px;
+    	font-size: 24px;
+    }
 
 @media only screen and (min-width: 992px) {
 	.main-header {
@@ -351,6 +461,10 @@ form.example button:hover {
 	body .container-fluid {
 		padding-right: 70px;
 		padding-left: 70px;
+	}
+
+	.f-lists1 a {
+		padding-left: 0;
 	}
 }
 
