@@ -124,6 +124,7 @@ form.example button:hover {
 .menu-list a {
 	display: block;
 	padding: 5px;
+	color: #fff;
 }
 
 .menu-list a:hover {
@@ -131,9 +132,6 @@ form.example button:hover {
 	text-decoration: none;
 }
 
-.menu-list a:visited {
-	color: #fff;
-}
 .menu-parent:hover .menu-list {
 	display: inline-block;
 } 		
@@ -247,51 +245,52 @@ form.example button:hover {
 
 
 .footer-lists {
-	padding-left: 0
+	padding-left: 0;
 }
 
-.contact span {
-	margin-left: 10px;
+.contact ul {
+	margin-bottom: 0;
+	padding-left: 0;
 }
 
-.follow {
+.contact ul li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#follow {
 	color: #000;
 	font-weight: bold;
+	font-size: 20px;
 }
 
-footer span.fab {
+.contact ul span {
+	display: block;
+	padding-top: 10px;
+	margin-left: 6px;
 	font-size: 40px;
 	text-align: center;
 	color: #fff;
 	width: 56px;
 	height: 56px;
-	padding-left: 25px;
-	padding-top: 10px;
 	background-color: rgb(79, 158, 178);
 }
 
 
-footer span.fa-twitter {
-	font-size: 35px;
-	padding-left: 0;
-	vertical-align: top;
-}
-
-.contact a {
-	display: inline-block;
-	vertical-align: top;
-	position: relative;
+.contact ul li:last-child span {
 	width: 160px;
-	height: 56px;
-	font-size: 20px;
-	color: #fff;
-	background-color: rgb(79, 158, 178);
 }
 
-.e-mail {
-	position: absolute;
-	top: 50%;
-	left: 50%;
+.contact ul a .fa-facebook-f {
+	padding-left: 25px;
+}
+
+.contact ul .fa-twitter { 
+	font-size: 35px;
+}
+
+#e-mail {
+	font-size: 20px;
 }
 
 .last-part {
@@ -300,9 +299,7 @@ footer span.fa-twitter {
 	background-color: rgb(79, 158, 178);
 }
 
-.last-info {
-	margin-bottom: 10px;
-}
+
 
 .last-info li {
 	display: inline-block;
@@ -344,7 +341,7 @@ footer span.fa-twitter {
     }
 
     .menu-search {
-    	flex-basis: 50%;
+    	width: 50%;
     	margin-right: 0;
     }
 
@@ -382,7 +379,7 @@ footer span.fa-twitter {
 	.menu-list {
 		position: static;
 		font-size: 22px;
-		background-color: initial;
+		background-color: rgb(79, 158, 178);
 		box-shadow: 0 0 0;
 	}
 
@@ -394,6 +391,15 @@ footer span.fa-twitter {
 	.menu,
 	.menu-text {
 		display: none;
+	}
+
+	.latest-newses {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.full-story {
+		margin-top: auto;
 	}
 
 	.main-footer {
@@ -409,26 +415,28 @@ footer span.fa-twitter {
 	    width: 10%;
    }
 
-   .contact span {
-	    margin-left: 35px;
+   #follow {
+   	    margin-top: 25px;
+   	    margin-right: 20px
    }
 
-   footer span.fab {
+   .contact ul span {
 	   font-size: 53px;
 	   width: 70px;
 	   height: 70px;
    }
    
-    footer span.fa-twitter {
+    .contact ul li:nth-child(3n) span {
     	font-size: 45px;
     	padding-top: 15px;
     } 
 
-    .contact a {
-    	width: 200px;
-    	height: 70px;
+    #e-mail {
+    	width: 198px;
     	font-size: 24px;
     }
+
+}
 
 @media only screen and (min-width: 992px) {
 	.main-header {
